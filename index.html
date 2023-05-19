@@ -1,0 +1,194 @@
+<html>
+<head>
+
+<link href="ASSEST/CSS/style.css" rel="stylesheet">
+
+<title> TASK </title>
+</head>
+<body>
+
+<hr color="black">
+<marquee> 
+<h1> <center> TAKE A DEEP BREATH | LOOSEN UP STATION </center> </h1> 
+</marquee>
+<hr color="black">
+
+<br>
+
+<div id="clock"> 8:10:45 </div>
+<script src="clock2.js"> </script>
+
+<br><br>
+
+<center>
+<video width="720px" autoplay muted loop>
+<source src="ASSEST/VIDEO/CAT.mp4" type="video/mp4">
+</video>
+</center>
+
+<br><br>
+<hr color="black">
+<center> <b> BEAUTY AND THE BEAST </b> </center>
+<hr color="black">
+<br>
+
+<center>
+<iframe src="ASSEST/PDF/BEDTIME_STORY.pdf" width="60%" height="700px">
+</iframe>
+</center>
+
+<br><br>
+<hr color="black">
+<center> <b> FAVORITE SONGS </b> </center>
+<hr color="black">
+<br>
+
+<center>
+<img src="ASSEST/IMAGE/KIDULT.jpg" width="20%">
+</center>
+
+<br>
+
+<center>
+KIDULT
+<br><br>
+<audio controls>
+<source src="ASSEST/AUDIO/Kidult.mp3" type="audio/mpeg">
+</audio>
+</center>
+
+<br><br><br><br>
+
+<center>
+<img src="ASSEST/IMAGE/HEAVENS.jpg" width="20%">
+</center>
+
+<br>
+
+<center>
+HEAVENS CLOUD
+<br><br>
+<audio controls>
+<source src="ASSEST/AUDIO/Heavens_Cloud.mp3" type="audio/mpeg">
+</audio>
+</center>
+
+<br><br><br><br>
+
+<center>
+<img src="ASSEST/IMAGE/FALLIN.jpg" width="20%">
+</center>
+
+<br>
+
+<center>
+FALLIN FLOWER
+<br><br>
+<audio controls>
+<source src="ASSEST/AUDIO/Fallin_Flower.mp3" type="audio/mpeg">
+</audio>
+</center>
+
+<br><br><br><br>
+
+<center>
+<img src="ASSEST/IMAGE/IDUBILY.jpg" width="20%" height="250px">
+</center>
+
+<br>
+
+<center>
+I DON'T UNDERSTAND BUT I LUV U
+<br><br>
+<audio controls>
+<source src="ASSEST/AUDIO/IDUBILY.mp3" type="audio/mpeg">
+</audio>
+</center>
+
+<br><br><br><br>
+
+<center>
+<img src="ASSEST/IMAGE/FML.jpg" width="20%">
+</center>
+
+<br>
+
+<center>
+F<3 MY LIFE
+<br><br>
+<audio controls>
+<source src="ASSEST/AUDIO/FML.mp3" type="audio/mpeg">
+</audio>
+</center>
+
+<br><br>
+<hr color="black">
+<center> <b> FAVORITE CHARACTERS </b> </center>
+<hr color="black">
+<br>
+
+<br>
+
+<center>
+<video controls width="700px">
+<source src="ASSEST/VIDEO/AYAKA.mp4" type="video/mp4">
+</video>
+</center>
+
+<br><br><br>
+
+<iframe src="https://www.youtube.com/embed/J9WuPBOC_S8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen width="560" height="315" align="left">
+</iframe>
+
+<iframe src="https://www.youtube.com/embed/TSsWsCdiiPI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen width="560" height="315" align="right">
+</iframe>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<br><br>
+<hr color="black">
+<center> <marquee> <font size="5"> <b> THANK YOU </b> </font> </marquee> </center>
+<hr color="black">
+<br>
+
+<center>
+<video controls width="720px">
+<source src="ASSEST/VIDEO/BOY.mp4" type="video/mp4">
+</video>
+</center>
+
+<br><br><br>
+
+<script>
+setInterval(showTime, 1000);
+function showTime() {
+	let time = new Date();
+	let hour = time.getHours();
+	let min = time.getMinutes();
+	let sec = time.getSeconds();
+	am_pm = "AM";
+
+	if (hour > 12) {
+		hour -= 12;
+		am_pm = "PM";
+	}
+	if (hour == 0) {
+		hr = 12;
+		am_pm = "AM";
+	}
+
+	hour = hour < 10 ? "0" + hour : hour;
+	min = min < 10 ? "0" + min : min;
+	sec = sec < 10 ? "0" + sec : sec;
+
+	let currentTime = hour + ":"
+			+ min + ":" + sec + am_pm;
+
+	document.getElementById("clock")
+			.innerHTML = currentTime;
+}
+showTime();
+</script>
+
+</body>
+</html>
